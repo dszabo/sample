@@ -5,7 +5,6 @@ import junit.framework.TestCase;
 
 /**
  * Created with IntelliJ IDEA.
- * User: dszab_000
  * Date: 9/8/13
  * Time: 11:17 AM
  * To change this template use File | Settings | File Templates.
@@ -21,5 +20,11 @@ public class CalculatorTest extends TestCase {
         Calculator calculator = new Calculator();
         int result = calculator.subtract(44, 2);
         Assert.assertEquals(42, result);
+    }
+
+    public void testSubtract2() throws Exception {
+        Calculator calculator = new Calculator();
+        int result = calculator.subtract(-2, -2);
+        Assert.assertEquals(0, result);
     }
 }
