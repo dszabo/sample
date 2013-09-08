@@ -9,6 +9,7 @@ package com.packtpub;
  */
 public class Calculator {
     public int sum(int x, int y) {
+        /* returns the sum */
         return x + y;
     }
 }
