@@ -16,6 +16,12 @@ public class CalculatorTest extends TestCase {
         Assert.assertEquals(3, sum);
     }
 
+    public void testSum2() throws Exception {
+        Calculator calculator = new Calculator();
+        int sum = calculator.sum(-1, -1);
+        Assert.assertEquals(-2, sum);
+    }
+
     public void testSubtract() throws Exception {
         Calculator calculator = new Calculator();
         int result = calculator.subtract(44, 2);
